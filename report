@@ -1,0 +1,51 @@
+Hackathon Project Report: Enhancing Stock Portfolio Strategies
+
+Introduction:
+
+Our project focused on refining and enhancing algorithmic trading methods for stock portfolios. 
+Leveraging QuantRocket for data retrieval, analysis, and strategy execution, our goal was to develop effective strategies that adapt to market dynamics
+
+Data Preparation:
+
+Extracts historical stock price data for a specific security (e.g., AAPL) from a database.
+Processes and organizes the data into a pandas DataFrame.
+
+Visualization:
+
+Plots the daily returns over time.
+Plots the closing prices over time.
+
+State Calculation:
+
+Calculates the state of the stock based on daily returns. States are categorized as 1 (positive return), 0 (neutral return), or -1 (negative return).
+
+Portfolio Management:
+
+Implements a simple portfolio management strategy based on state transitions. Buys are made when transitioning from a neutral state to a positive state, and sells are made when transitioning from a neutral state to a negative state.
+Probability Distribution of Portfolio Values:
+
+Calculates the probability distribution of portfolio values based on the implemented strategy.
+
+Visualization of Results:
+
+Visualizes the probability distribution of portfolio values using a bar plot.
+Visualizes the distribution of states using a count plot.
+
+Modeling:
+
+Performs auto ARIMA model selection to determine the best parameters for forecasting stock prices.
+Fits an ARIMA model to the historical stock price data.
+
+Forecasting:
+
+Generates forecasts for the next 20 days using the fitted ARIMA model.
+Creates a DataFrame to display the forecasted values with dates.
+
+Insight:
+The code illustrates the application of QuantRocket for developing algorithmic trading strategies, 
+focusing on optimizing stock portfolio performance through data analysis and forecasting techniques.
+
+Conclusion:
+By utilizing QuantRocket's capabilities, traders can enhance their decision-making process, 
+adapt to market changes, and potentially improve investment outcomes. Continued refinement and testing of these strategies are essential for maximizing returns 
+and managing risks effectively
